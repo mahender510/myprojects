@@ -1,0 +1,22 @@
+<apex:page controller="kVF7Cls">
+
+  <apex:form >
+
+      <apex:inputText value="{!str}">
+          <apex:actionSupport event="ondblclick" action="{!display}" rerender="ref"/>
+          <apex:commandButton id="btn" value="click me" onclick="fun()"/>
+      </apex:inputText>
+      <apex:pageBlock id="ref">
+        <p id="test">Welcome</p>
+          {!acc.name}
+          <apex:actionSupport event="ondblclick" action="{!display}"/>
+      </apex:pageBlock>
+  </apex:form>
+      <script>alert("welcome");
+      function fun()
+      {
+          alert("inside fun");
+      }
+      document.getElementById("test").innerHTML="Bye";
+      </script>
+</apex:page>

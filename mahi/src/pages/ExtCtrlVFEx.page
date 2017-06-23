@@ -1,0 +1,12 @@
+<apex:page standardController="account" extensions="AccountCustCtrlEx">
+     <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveAcc}" value="create"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account Information">
+                <apex:inputField value="{!acc.name}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

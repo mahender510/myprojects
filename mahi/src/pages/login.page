@@ -1,0 +1,12 @@
+<apex:page controller="loginCls">
+    <apex:form >
+        <p><b>Login Page</b></p>
+        <apex:panelGrid columns="2" style="margin-top:1em;">
+            <p><b>User Name</b><apex:inputText required="true" id="userName" value="{!userName}"/></p>
+            <p><b>Password</b><apex:inputsecret required="true" id="password" value="{!password}"/></p>
+
+            <apex:commandButton action="{!login}" value="Login"/>
+        </apex:panelGrid>
+        {!con}
+    </apex:form>
+</apex:page>

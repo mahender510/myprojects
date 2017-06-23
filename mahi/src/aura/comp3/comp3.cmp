@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="num1" type="integer" default="100"/>
+    <aura:attribute name="num2" type="integer" default="200"/>
+    <aura:attribute name="sum" type="integer"/>
+    {!v.num1}+{!v.num2}={!v.sum}
+    <br/>
+    <ui:button label="Add Numbers" press="{!c.add}"/>
+</aura:component>

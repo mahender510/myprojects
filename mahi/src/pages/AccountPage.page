@@ -1,0 +1,35 @@
+<apex:page standardController="account">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Create Account"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account Information" columns="2" collapsible="false">
+                Account Owner {!$User.FirstName }
+                <apex:inputField value="{!account.rating}"/>
+                <apex:inputField value="{!account.name}"/>
+                <apex:inputField value="{!account.phone}" required="true"/>
+                <apex:inputField value="{!account.parentid}"/>
+                <apex:inputField value="{!account.fax}"/>
+                <apex:inputField value="{!account.type}"/>
+                <apex:inputField value="{!account.ownership}"/>
+                <apex:inputField value="{!account.industry}"/>
+                <apex:inputField value="{!account.Active__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Address" columns="2">
+                <apex:inputField value="{!account.billingstreet}"/>
+                <apex:inputField value="{!account.shippingstreet}"/>
+                <apex:inputField value="{!account.billingcity}"/>
+                <apex:inputField value="{!account.shippingcity}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Additional Info" columns="2">
+                <apex:inputField value="{!account.CustomerPriority__c}"/>
+                <apex:inputField value="{!account.SLA__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Description">
+                <apex:inputField value="{!account.description}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

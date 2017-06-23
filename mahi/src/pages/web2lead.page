@@ -1,0 +1,25 @@
+<apex:page standardController="Lead">
+    <apex:form >
+        <apex:pageBlock mode="New">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Submit"/>
+            </apex:pageBlockButtons>
+           
+            <apex:pageBlockSection title="Contact Information" columns="1">
+
+           
+            <apex:pageBlockSection columns="1" >
+            <apex:inputField value="{!Lead.FirstName}" required="true"/>
+            <apex:inputField value="{!Lead.LastName}"/>
+            <apex:inputField value="{!Lead.Email}"/>
+            <apex:inputField value="{!Lead.Phone}" required="true"/>
+            </apex:pageBlockSection>
+           <apex:image id="theImage" value="Mahender" width="220" height="55"/>
+           <apex:outputLink value="https://www.salesforce.com" id="theLink">
+           <apex:image value="{!URLFOR($Resource.Mahender)}" width="250" height="200"/>
+           </apex:outputLink>
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+    </apex:form>
+    </apex:page>

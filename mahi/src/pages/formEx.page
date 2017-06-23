@@ -1,0 +1,32 @@
+<apex:page >
+<head>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<apex:slds />
+<style>
+.formTags{
+width:50%;
+margin:auto;
+}
+</style>
+<div class="formTags">
+<div>
+<span>Contact Name*  </span>
+<input class="form-control" id="name" maxlength="35" name="name" size="20" style="width:70%" type="text"/><br/>
+
+</div>
+
+
+<label for="email">Email</label>
+<input class="form-control" id="email" maxlength="80" name="email" size="20" style="width:70%" type="text"/> 
+
+<label for="phone">Phone</label><input class="form-control" id="phone" maxlength="40" name="phone" size="20" style="width:70%" type="text"/> 
+
+<label for="subject">Subject</label><input class="form-control" id="subject" maxlength="80" name="subject" size="20" style="width:70%" type="text"/> 
+
+<label for="description">Description</label><textarea class="form-control" name="description" style="width:70%"></textarea> 
+
+<input id="external" name="external" type="hidden" value="1"/> 
+<div class="submitButtonContainer"><button aria-live="off" class="slds-button slds-button--neutral buttonStyle caseCreationButton uiButton" data-aura-class="uiButton" data-aura-rendered-by="63:2;a" type="button">Submit</button></div>
+</div>
+</apex:page>

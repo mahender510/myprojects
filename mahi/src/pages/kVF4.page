@@ -1,0 +1,12 @@
+<apex:page controller="kVF4Cls">
+    <apex:form >
+    <apex:pageBlock title="search">
+             <apex:inputtext value="{!str}"/>
+             <apex:commandButton value="search" action="{!serachRes}"/>
+     <apex:pageBlockTable value="{!acc}" var="a">
+         <apex:column value="{!a.name}"/>
+         <apex:column value="{!a.industry}"/>
+     </apex:pageBlockTable>   
+     </apex:pageBlock>
+     </apex:form>
+</apex:page>

@@ -1,0 +1,30 @@
+<apex:page controller="kVF3Cls">
+     <apex:form >
+         <apex:pageblock >
+             <apex:pageblockTable value="{!acc}" var="a">
+                 <apex:column value="{!a.id}"/>
+                 <apex:column value="{!a.name}"/>
+                 <apex:column value="{!a.industry}"/>
+             </apex:pageblockTable>
+         </apex:pageblock>
+         <apex:dataTable value="{!acc}" var="x" cellpadding="10%" cellspacing="5px" border="3px" align="center">
+                 <apex:column value="{!x.id}"/>
+                 <apex:column value="{!x.name}"/>
+                 <apex:column value="{!x.industry}"/>       
+         </apex:dataTable>
+         <apex:repeat value="{!acc}" var="y">
+             {!y.name}
+         </apex:repeat>
+         <apex:datalist value="{!acc}" var="z"> 
+             {!z.name}
+         </apex:datalist>
+         <apex:pageBlock title="search" id="block">
+             <apex:inputtext value="{!str}"/>
+             <apex:commandButton value="search" action="{!serachRes}" rerender="block"/>
+     <apex:pageBlockTable value="{!acc}" var="a" title="res" >
+         <apex:column value="{!a.name}"/>
+         <apex:column value="{!a.industry}"/>
+     </apex:pageBlockTable>   
+     </apex:pageBlock>
+     </apex:form>
+</apex:page>

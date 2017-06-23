@@ -1,0 +1,20 @@
+<apex:page controller="AccountCustCtrlEx">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveAcc}" value="create"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account Information">
+                <apex:inputField value="{!acc.name}"/>
+                <apex:inputField value="{!acc.accountnumber}"/>
+                <apex:inputField value="{!acc.phone}"/>
+                <apex:inputField value="{!acc.rating}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Contact Information">
+            	<apex:inputField value="{!con.firstname}"/>
+                <apex:inputField value="{!con.lastname}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page standardController="Diagnose__c">
+<apex:form >
+  <apex:pageBlock >
+      <apex:pageBlockButtons >
+          <apex:commandButton action="{!save}" value="Create"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Information">
+          <apex:inputField value="{!Diagnose__c.Diagnose_Name__c}"/>
+          <apex:inputField value="{!Diagnose__c.patient_info__c}"/>
+          <apex:inputField value="{!Diagnose__c.price__c}"/>
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<apex:page controller="vfTestCls">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveAccSecond}" value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Address Information">
+                <apex:inputField value="{!acc.billingstreet}"/>
+                <apex:inputField value="{!acc.billingcity}"/>
+                <apex:inputField value="{!acc.billingstate}"/>
+                <apex:inputField value="{!acc.billingcountry}"/>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

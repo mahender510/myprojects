@@ -1,0 +1,29 @@
+<apex:page controller="kVF2Cls">
+     <apex:form >
+         <apex:pageBlock title="info" rendered="{!retVal}">
+         <apex:pageBlockButtons >
+             <apex:commandButton value="Save" action="{!save}"/>
+         </apex:pageBlockButtons>
+             <apex:pageBlockSection title="account info">
+                 <apex:inputField value="{!acc.name}"/>
+                 <apex:inputField value="{!acc.industry}"/>
+
+             </apex:pageBlockSection>
+             <apex:pageBlockSection title="contact info">
+                 <apex:inputField value="{!con.firstname}"/>
+                 <apex:inputField value="{!con.lastname}"/>
+                 <apex:inputField value="{!con.accountid}"/>
+             </apex:pageBlockSection>
+             <apex:pageBlockSection title="opportunity info" collapsible="false">
+                 <apex:inputField value="{!opp.name}"/>
+                 <apex:inputField value="{!opp.type}"/>
+                 <apex:inputField value="{!opp.amount}"/>
+                 <apex:inputField value="{!opp.closedate}"/>
+                 <apex:inputField value="{!opp.stagename}"/>
+             </apex:pageBlockSection>
+         </apex:pageBlock>
+     </apex:form>
+     <apex:detail subject="{!acc.id}" relatedList="false"/>
+     <apex:detail subject="{!con.id}" relatedList="false"/>
+     <apex:detail subject="{!opp.id}" relatedList="false"/>
+</apex:page>

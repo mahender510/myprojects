@@ -1,0 +1,17 @@
+<apex:page controller="vfAccConCls">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                
+                <apex:commandButton action="{!saveAccCon}" value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Contact Information">
+                <apex:inputField value="{!con.firstname}"/>
+                <apex:inputField value="{!con.lastname}"/>
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

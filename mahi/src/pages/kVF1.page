@@ -1,0 +1,8 @@
+<apex:page controller="kVF1Cls">
+    <apex:form >
+        <apex:inputtext value="{!inputVal}"/>
+        <apex:commandButton value="search" action="{!results}"/>
+            {!acc.name} {!now()}
+    </apex:form>  
+
+</apex:page>

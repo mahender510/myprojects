@@ -1,0 +1,17 @@
+<apex:page controller="vfTestCls">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveOnlyAcc}" value="Next Page"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account Information">
+                <apex:inputField value="{!acc.name}"/>
+                <apex:inputField value="{!acc.accountnumber}"/>
+                <apex:inputField value="{!acc.phone}"/>
+                <apex:inputField value="{!acc.rating}"/>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

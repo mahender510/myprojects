@@ -1,0 +1,47 @@
+<apex:page docType="html-5.0" standardController="contact" recordSetVar="contacts" sidebar="false" showHeader="false">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <apex:stylesheet value="{!URLFOR($Resource.styles, 'styles.css')}"/>
+</head>
+
+
+<div class="navbar-wrapper">
+    <div class="container-fluid">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><apex:image url="{!$Resource.logo}" width="50" height="50"/></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" class="">Home</a></li>
+                        <li><a href="#">Rentals</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Day Care</a></li>
+                        <li><a href="#">Vehicles</a></li>
+                        <li class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Others<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Add New</a></li>
+                                <li><a href="#">Bulk Upload</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+</apex:page>
